@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Rocío ❤️</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #ffe6e6, #ffe0f0);
+      color: #5c2b2b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .main-content {
+      padding: 2rem;
+      text-align: center;
+    }
+    .main-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .main-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    footer {
+      background-color: #ffd6d6;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Para Rocío, con todo mi amor ❤️</h1>
+    <p>Desde el 8 de febrero, nuestra historia es la más hermosa que he vivido</p>
+  </header>
+  <section class="main-content">
+    <h2>Nuestra Historia</h2>
+    <p>Desde que empezamos el 8 de febrero, cada momento contigo ha sido único y especial. Esta página es un pequeño homenaje a nuestro amor y a cada sonrisa que hemos compartido. Eres mi compañera, mi risa, mi calma y mi aventura. Te amo, Rocío. ❤️</p>
+  </section>
+  <section class="main-content">
+    <h2>Nuestros Viajes Juntos ✈️</h2>
+    <div class="gallery">
+      <a href="#img1"><img src="IMG-20241225-WA0012.jpg" alt="Viaje 1"></a>
+      <a href="#img2"><img src="IMG-20250416-WA0018.jpg" alt="Viaje 2"></a>
+      <a href="#img3"><img src="IMG-20250419-WA0034.jpg" alt="Viaje 3"></a>
+      <a href="#img4"><img src="IMG-20250419-WA0038.jpg" alt="Viaje 4"></a>
+      <a href="#img4"><img src="IMG-20250419-WA0077.jpg" alt="Viaje 4"></a>
+    </div>
+  </section>
+
+  <div id="img1" class="lightbox"><a href="#"><img src="IMG-20241225-WA0012.jpg" alt="Viaje 1"></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="IMG-20250416-WA0018.jpg" alt="Viaje 2"></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="IMG-20250419-WA0034.jpg" alt="Viaje 3"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="IMG-20250419-WA0038.jpg" alt="Viaje 4"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="IMG-20250419-WA0077.jpg" alt="Viaje 4"></a></div>
+
+  <footer>
+    <p>Con todo mi amor, siempre sere tuyo ❤️</p>
+  </footer>
+</body>
+</html>
